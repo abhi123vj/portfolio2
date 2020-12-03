@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -62,12 +65,16 @@
                     <div>
                         <h2 class="about__subtitle">I'am Abhiram</h2>
                         <span class="about__profession">Freelancer</span>
-                        <p class="about__text">I have a personal philosophy in life: If somebody else can do something that I'm doing, they should do it. And what I want to do is find things that would represent a unique contribution to the world - the contribution that only I, and my portfolio of talents, can make happen. Those are my priorities in life.</p>
+                        <p class="about__text">Btech Third year CSE Student connected with the Android development and latest technology for few years.<br>
+
+                            Well-organised person, problem solver, independent employee with high attention to detail. Fan of Learning new stuffs, TV series and movies.<br>
+                            
+                            Interested in the Full Stack spectrum and working on ambitious projects with positive people.</p>
 
                         <div class="about__social">
-                            <a href="https://www.linkedin.com/in/abhi-ram-01479616a" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://www.linkedin.com/in/abhiram-s-01479616a/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
                             <a href="https://github.com/abhi123vj" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                            <a href="https://dribbble.com/4bh1ram" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
                         </div>
                     </div>
                 </div>
@@ -81,19 +88,33 @@
                     <div class="skills__box">
                       
 
-                        <h3 class="skills__subtitle">Development</h3>
+                        <h3 class="skills__subtitle">Programming languages</h3>
+
+                        <span class="skills__name">C++</span>
                         <span class="skills__name">Kotlin</span>
                         <span class="skills__name">Python</span>
-                        <span class="skills__name">Html</span>
-                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Dart</span>
                         <span class="skills__name">Javascript</span>
-                        <span class="skills__name">Scss</span>
-                        <span class="skills__name">React</span>
+                       
+                        <h3 class="skills__subtitle">WebTechnologies</h3>
+
+                        <span class="skills__name">MERN</span>
+                        <span class="skills__name">HTML5</span>
+                        <span class="skills__name">CSS</span>
+                        <h3 class="skills__subtitle">Data Modelling</h3>
                         
-                        <h3 class="skills__subtitle">Design</h3>
+                        <span class="skills__name">XML</span>
+                        <span class="skills__name">JSON</span>
+                        
+                        <h3 class="skills__subtitle">Data Management</h3>
+                        <span class="skills__name">MySQL</span>
+                        <span class="skills__name">MongoDB</span>
+                        <h3 class="skills__subtitle">Software</h3>
+                        <span class="skills__name">Android Studio</span>
                         <span class="skills__name">Photoshop</span>
-                        <span class="skills__name">After Effects</span>
-                        <span class="skills__name">Lightroom</span>
+                        <span class="skills__name">VSCode</span>
+                        <span class="skills__name">PremierePro</span>
+
                     </div>
 
                     <div class="skills__img">
@@ -111,42 +132,43 @@
                         <img src="assets/img/work1.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.abhi.ucekbook&hl=en" class="portfolio__link-name">UCEK Book</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work2.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="https://intagram-4bh1.web.app/" class="portfolio__link-name">Instagram Clone</a>
                         </div>
                     </div>
+                
                     <div class="portfolio__img">
                         <img src="assets/img/work3.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.abhi.bingo" class="portfolio__link-name">Multiplayer Bingo </a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work4.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">On Progress</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work5.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">On Progress</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work6.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">upcoming</a>
                         </div>
                     </div>
                 </div>
@@ -170,15 +192,15 @@
                         <span class="contact__text">There’s No Place Like 127.0.0.1 </span>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form id="submit-form" action="" class="contact__form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
+                            <input type="text" name="name"placeholder="Name" class="contact__input">
+                            <input type="mail" name="email" placeholder="Email" class="contact__input">
                         </div>
 
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <textarea  id="" name="message" cols="0" rows="10" class="contact__input"></textarea>
 
-                        <input type="submit" value="Enviar" class="contact__button">
+                        <input type="submit" value="Submit" class="contact__button">
                     </form>
                 </div>
             </section>
@@ -206,13 +228,32 @@
                 <div class="footer__data">
                     <h2 class="footer__title">FOLLOW</h2>
                     <a href="https://www.facebook.com/profile.php?id=100004170678708" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/4bh16am/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/abhiram123vjmj" class="footer__social"><i class='bx bxl-twitter' ></i></a>
                 </div>
 
 
             </div>
         </footer>
+        <script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbwPQoymCP0P0fBFWP98fOtFwanFgkFVWYSswmeG/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
